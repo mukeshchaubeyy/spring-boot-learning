@@ -1,0 +1,19 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: EmployeeService
+  datasource:
+    url: jdbc:postgresql://<host>:5432/<dbName>
+    username: <username>
+    password: <password>
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+  sql:
+    init:
+      mode: always
